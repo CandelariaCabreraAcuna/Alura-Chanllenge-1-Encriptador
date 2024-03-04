@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: #F3F5FC;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 343px;
+    height: 158px;
+    gap: 24px;
+}
+.encriptar , .desencriptar{
+    width: 343px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background: none;
+    color: #0A3871;
+    padding: 24px;
+    gap: 8px;
+}
+.encriptar{
+    background: #0A3871;
+    color: white;
+}
+.button-error{
+    width: 343px;
+    height: 67px;
+    border: 1px solid red;
+    border-radius: 24px;
+    background: none;
+    color: grey;
+    padding: 24px;
+    gap: 8px;
+}
+
+input{
+    width: 343px;
+    height: 343px; 
+    border: none;
+    background: none;
+    color: #0A3871;
+    padding: 24px;
+    gap: 8px;
+    font-family: "Inter", sans-serif;
+}
+input::placeholder{
+    font-size: 26px;
+    color: #0A3871;
+}
+span{
+    margin-top: 44px;
+}
+.logo{
+    margin: 24px 265px 0 0px
+}
+.salida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 84px;
+    width: 327px;
+    height: 186px;
+    border-radius: 32px;
+    gap: 32px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.salida >span{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.alert{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #495057;
+    text-align: start;
+}
+.salida > strong{
+    font-size: 24px;
+}
+.picture{
+    display: none;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+
+
+@media (min-width: 768px) {
+ .container-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 688px;
+    height: 67px;
+ }
+ .salida{
+    width: 680px;
+    height: 133px;
+    margin-top: 52px;
+ }
+ input{
+    width: 688px;
+    height: 458px;
+ }
+ input::placeholder{
+    font-size: 32px;
+    font-weight: 400;
+    color: #0A3871;
+}
+.alert{
+    width: 688px;
+}
+.logo{
+   margin: 20px 665px 0 0px;    
+}
+.picture{
+    display: none;
+}
+}
+
+
+#snackbar {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+  }
+  
+  
+  #snackbar.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+@media (min-width: 1440px){
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 25px;
+  }
+ .salida{
+    width: 400px;
+    height: 944px;
+    margin-top: -60px;
+ }
+ #resultado{
+    max-width: 390px !important;
+    
+ }
+ .picture{
+    display: flex;
+    width: 336px;
+    height: 304px;
+ }
+ .container-buttons{
+    width: 680px;
+ }
+ header{
+    padding: fixed;
+
+ }
+ .logo{
+    margin: 40px 0 0 30px;
+ }
+
+}
